@@ -3,7 +3,7 @@ var router = express.Router()
 
 router.use(express.static(__dirname + "/../assets"))
 router.get("/", function(req, res){
-	res.sendfile("layouts/posts.html")
+	res.render("index")
 })
 
 module.exports = router
