@@ -1,12 +1,12 @@
 {
-  "name": "maker-faire-eindhoven",
-  "version": "1.0.0",
-  "description": "Hackathon project for the maker faire of eindhoven 2015",
-  "main": "server.js",
-  "author": "luduvigo",
-  "license": "ISC",
-  "repository": {
-     "type": "git",
-     "url": "https://github.com/luduvigo/maker-faire-eindhoven-2015" 
+  "name": "maker-fair-eindhoven-2015",
+  "dependencies": {
+    "body-parser": "~1.13.1",
+    "express": "~4.12.4",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
   }
 }
