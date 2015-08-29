@@ -4,10 +4,10 @@ var Pitch = db.model("Pitch", {
 	votes:                  {type: int, required: true},
 	description:            {type: String , required: true},
     tag:                    {type: String},
-    picture_url:            {type: String, required: true},
-    lab_name:               {type: String, required: true},
+    pictureurl:             {type: String, required: true},
+    labname:                {type: String, required: true},
     comments:               {type: [String]}
-    insertion_date:         {type: Date, required: true, default: Date.now }
+    insertiondate:          {type: Date, required: true, default: Date.now }
 })
 
 module.exports = Pitch
