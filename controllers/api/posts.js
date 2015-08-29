@@ -14,14 +14,14 @@ router.post("/", function(req, res, next){
 	console.log(req.body.username)
 	console.log(req.body.body)
 	
-	var post = new Post({
-		username: req.body.username,
-		body: req.body.body
-	})
-	post.save(function (err, post) {
-		if(err) { return next(err) }
-		res.json(201, post)
-	})
+//	var post = new Post({
+//		username: req.body.username,
+//		body: req.body.body
+//	})
+//	post.save(function (err, post) {
+//		if(err) { return next(err) }
+//		res.json(201, post)
+//	})
 })
 
 module.exports = router
