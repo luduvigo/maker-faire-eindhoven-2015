@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>	
+<body ng-app="app">
+	<div ng-controller="PitchesCtrl" class="container">
+		<form role="form">
+			<div class="form-group">
+                <h1> Eindhoven Lab Community </h1>
+                <div class="input-group">
+					<!-- input ng-model="postBody" class="form-control" / -->
+					<span class="input-group-btn">
+						<button ng-click="addPitch()" class="btn btn-default">Add your pitch now!</button>
+					</span>
+				</div>
+			</div>		
+		</form>
+		
+		<ul class="list-group">
+			<li ng-repeat="pitch in pitches | orderBy: '-insertiondate'" class="list-group-item">
+				<strong>@{{ pitch.username }}</strong>
+				<span>{{ pitch.body }}</span>
+				<span>{{ pitch.votes }}</span>
+				<span>{{ pitch.description }}</span>
+				<span>{{ pitch.tags }}</span>
+				<span>{{ pitch.pictureurl}}</span>
+				<span>{{ pitch.labname }}</span>
+				<span>{{ pitch.tags }}</span>
+			</li>
+		</ul -->
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+	<script src="/app.js">
+		
+	</script>
+</body>
+</html>
