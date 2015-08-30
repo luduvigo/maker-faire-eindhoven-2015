@@ -22,12 +22,12 @@ router.post("/", function(req, res, next){
 	//})
     
 	var pitch = new Pitch({
-		title: 'test',
-		votes: 0,
-        description: 'description',
+		title: 'In Moov',
+		votes: 230,
+        description: 'The first life size humanoid robot you can 3D print and animate. You have a 3D printer, some building skills, This project is for you!!',
         tag: 'tag',
-        pictureurl: 'http://www.automobielmanagement.nl/images/nieuwsbrief/artikelen_fotos_20571_800.jpg',
-        labname: 'SnappCar'
+        pictureurl: 'http://www.inmoov.fr/wp-content/uploads/2013/08/head.jpg',
+        labname: 'Gael Langevin'
     })
 	pitch.save(function (err, pitch) {
 		if(err) { return next(err) }

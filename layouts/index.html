@@ -89,12 +89,14 @@
     <!-- /div-->
     <!-- /.banner -->
     
+	<br>
+	<br>
+	
     <a  name="pitches"></a>
 
 	<div ng-controller="PitchesCtrl" class="container">
 		<!-- form role="form">
 			<div class="form-group">
-                <h1> Makers of Eindhoven </h1>
                 <div class="input-group">
 					<input ng-model="postBody" class="form-control" />
 					<span class="input-group-btn">
@@ -102,7 +104,7 @@
 					</span>
 				</div>
 			</div>		
-		</form -->
+		</form-->
 
 		<ul class="list-group">
 
@@ -114,7 +116,7 @@
 				<span>{{ pitch.votes }}</span>
 				</div>	
 				<div class="col-md-2">
-					<img src="{{ pitch.pictureurl}}" alt="Pitch Picture" height="80" width="120">	
+					<img src="{{ pitch.pictureurl}}" alt="Pitch Picture" height="100" width="140">	
 				</div>
 				<div class="col-md-5">
 				<h4 class="pitch-title">{{ pitch.title }}</h4>
@@ -132,9 +134,26 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
 	<script src="/app.js"></script>
-
+	
+	<br>
+	<br>
     
     <a  name="addyours"></a>
+	
+	<div class="container">
+  <h2>Add your pitch here</h2>
+  <form role="form">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 
     <a  name="contacts"></a>
 
