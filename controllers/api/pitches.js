@@ -5,7 +5,6 @@ router.get("/", function (req, res, next){
 	console.log("Pitch get")
 	Pitch.find().sort('-insertiondate').exec(function(err, pitches){
 		if (err) {return next(err)}	
-		console.log(pitches)
 		res.json(pitches)
 	})
 })
@@ -34,9 +33,6 @@ router.post("/", function(req, res, next){
 		if(err) { return next(err) }
 		res.json(201, pitch)
 	})
-
-    console.log('Add pitch')
-    console.log(pitch)
 })
 
 module.exports = router
