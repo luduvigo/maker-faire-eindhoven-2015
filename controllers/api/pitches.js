@@ -22,12 +22,12 @@ router.post("/", function(req, res, next){
 	//})
     
 	var pitch = new Pitch({
-		title: 'Power Field Media',
-		votes: 235,
-        description: 'We love to capture wisdom and to build on interactions.',
+		title: 'Pillo Development Kit',
+	votes: 168,
+        description: 'For all crazy developers with Pillo controllers, here you’ll find the available software to support creating Pillo games in Unity 3D.',
         tag: 'tag',
-        pictureurl: 'https://yt3.ggpht.com/-Ar8UAZslucw/AAAAAAAAAAI/AAAAAAAAAAA/mY9aC8XHlrU/s100-c-k-no/photo.jpg',
-        labname: 'Brian Kragtwijk'
+        pictureurl: 'http://pillogames.com/wp-content/uploads/2013/01/Pdk_pillo-pressure.png',
+        labname: 'Pillo Team'
     })
 	pitch.save(function (err, pitch) {
 		if(err) { return next(err) }
